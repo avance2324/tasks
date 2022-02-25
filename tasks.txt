@@ -110,6 +110,10 @@
 3.     configure vscode code runner for python3 ........(done)
 4.     study argparse ..................................()
           make it easy to use
+5.     how to use return of importlib.import_module() ..()    
+         it returns the module
+	 
+
 
 20220226
 ----------------------------------------------------------------
