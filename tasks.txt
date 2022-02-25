@@ -48,7 +48,7 @@
 
 1.     line 40 - 42 no conversion
 2.     from line 43 - 61, convert to uint8
-3.     67 0 71 convert uint8
+3.     67 - 71 convert uint8
 4.     77 - 95 c 
 5.     101 - 105 u8
 6.     565 - 566, 568 - ?
@@ -103,8 +103,13 @@
           
 20220225
 ----------------------------------------------------------------
-1.     autosar training ................................()
+1.     autosar training ................................(done)
 2.     change BDT generator ............................()
+       2.1 in debug mode
+       2.2 
+3.     configure vscode code runner for python3 ........(done)
+4.     study argparse ..................................()
+          make it easy to use
 
 20220226
 ----------------------------------------------------------------
