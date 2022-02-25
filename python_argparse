@@ -1,0 +1,91 @@
+import argparse
+
+## =======================================================================
+##
+## test the use of subparsers
+##
+##   1) how to define subcommand with parser.add_subparsers()
+##
+##   2) how to add argument for subparsers()
+##
+##   3) how to tell which sub command is activated 
+##       <- for each subparser, use 
+##              parser_a.set_defaults(which="subcommand_a")
+##              parser_b.set_defaults(which="subcommand_b")
+##
+##   4) associate the sub-command to a function
+##       <- use parser_b.set_defaults(func = <function_name>)
+##       <- call function by: args.func(args)
+##  
+##   5) test the argparser by setting 
+##        args = parser.parse_args(['ci', '-m', "The is commit", 'file_B'])
+##
+##
+##   usage
+##   ======
+##    python3 test_subparsers.py add <filename>              ## add mode
+##
+##    python3 test_subparsers.py ci  -m <message> <filename>  ## commit mode
+##                               (1) |<------- (2) ------->|      
+##
+##     (1) subparser added by
+##            subparser = parser.add_subparsers()
+##            parser_b = subparser.add_parser("ci")
+##   
+##     (2) arguments of subparser, added by 
+##            parser_b.add_argument("-m", "--message")
+##              
+## =======================================================================
+
+
+## function do_ci is associated to sub-command : python3 test_subparsers.py ci 
+def do_ci(args):
+    print(f"do_ci (): message = {args.message}, file = {args.ci_name}")
+
+
+## [1] create parser
+parser = argparse.ArgumentParser()
+
+#  [1.1] create subparser
+subparser = parser.add_subparsers()
+
+## [1.2] create subparser: parser_a
+parser_a = subparser.add_parser("add")
+parser_a.add_argument("add_name")
+parser_a.set_defaults(which="add") ## used to tell this sub command is detected
+
+## [1.3] create subparser: parser_b
+parser_b = subparser.add_parser("ci")
+parser_b.add_argument("-m", "--message")
+parser_b.add_argument("ci_name")
+parser_b.set_defaults(which="ci")   ## used to tell this sub command is detected
+                                    ## set args.which = 'ci'
+parser_b.set_defaults(func = do_ci) ## associate to function do_ci()
+
+
+
+
+#### tests =============================================
+##
+#### test add mode
+args = parser.parse_args(['add', 'file_A'])
+print(args)
+
+## test ci mode
+args = parser.parse_args(['ci', '-m', "The is commit", 'file_B'])
+
+print(args)
+print(args.which)
+args.func(args)
+
+## ============================================
+## get arguments from command line
+## ============================================
+##
+##args = parser.parse_args()
+##args_value = vars(args) ## args_value is a dictionary
+##
+##print(args)
+##print(args.which)
+##
+##args.func(args)
