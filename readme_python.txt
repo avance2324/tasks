@@ -40,4 +40,47 @@ snake = "this_is_snake"
 print(f"{snake} -> {snake_to_camel(snake)}")
 print("wait")
 
+441  __getattr__()
+# use of __getattr__()
+#   When attribute x.y is accessed but not found by the usual procedure 
+#   , Python calls x .__getattr__('y') instead
+#   Then in __getattr__(self, y), python get the value of 'y' from 
+#   somewhere else.
+#   
+#   
+#   When you want to access test.y, and y is not defined in the class,
+#   then python will report error: 
+#    AttributeError: 'Test' object has no attribute 'y'
+#   
+#   By using __getattr
+#   python will try to call __getattr__('y'), and return the value of 
+#   test.x
+#   
+#  how to test
+#  1) comment the part-1, you will get AttributeError: 'Test' object has no attribute 'y'
+#  2) uncomment the part-1, you will get test.y = mytest_0
+#
+#
+class Test:
+    def __init__(self, x):
+        self.x = x
+
+    def display_val(self):
+        print(f"x = {self.x}")
+
+    # part-1
+    def __getattr__(self, y):
+        return self.x
+
+
+test = Test("mytest_0")
+
+
+print(f"test.y = {test.y}")
+
+test.display_val()
+
+print("wait")
+
+
 
