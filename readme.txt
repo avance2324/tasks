@@ -161,15 +161,10 @@ convert idl to cpp, .h
     [group    ]  quetion
     [status   ]	 closed
     [task     ]	 what does /-/blob following gitlab link mean?
-                  https://gitlab.ci.motional.com/wuppertal/
-		  monitoring-diagnostics/-/blob/master/src/
-		  EmbeddedMonitoring/test_cffi.py
-                  .../-/blob/master/src/EmbeddedMonitoring/task.py
+                    /-/blob/master/src/test.py
                  -> I guess this is related to top of the branch
 		    master
 		 <- Yes, it is the link to the file task.py in
-		    branch master, of following path
-		     monitoring-diagnostics/src/EmbeddedMonitoring/
-		     test_cffi.py
+		    branch master
                 
 
