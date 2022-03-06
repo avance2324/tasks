@@ -144,7 +144,7 @@ convert idl to cpp, .h
     [status   ]	 open
     [task     ]	 how can I know the path for file in vscode?
     	      	 <- under the file tab, you will see the path
-		     generator > database > __init__.py > load_file
+		     dir1 > dir2 > __init__.py > my_func
 
 
 550   20220304D  jira
