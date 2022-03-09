@@ -16,8 +16,21 @@
 		    you should be able to debug it.
 
 
+docker run  \
+    -it \
+    --ipc host \
+    --net host \
+    --rm \
+    $GPUS \
+    --privileged \
+    --device /dev/dri \
+    --entrypoint /my/entrypoint.sh \
+    -e DISPLAY=$DISPLAY \
+    -e HOME=/home/xxx \
+    -e XAUTHORITY=$XAUTHORITY \
+    -e TERM=xterm-256color \
 
-
+     
 
                 
 
