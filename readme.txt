@@ -76,3 +76,24 @@ question/notes
                               {"name":"LD_LIBRARY_PATH","value":"${workspaceFolder}/build"}],       
            - in .vscode: ln -s launch_docker.json  launch.json
            - in Dockerfile: add && apt install -y cmake \
+
+summary of the week 20220305 - 20220312
+1.   update docker image with LAN 1hour is much faster
+2.   cmake ../ -DCMAKE_BUILD_TYPE=Debug
+3.   cmake --build . ## == make 
+4.   standard project structure using CMakeLists.txt 
+      https://github.com/Barthelemy/CppProjectTemplate
+      use add_subdirectory(<dir_name>) to realize the structure      
+5.    c: initialize array and structure 
+       int x[] = {1,2,3}
+       Person m  = {
+            .firstname = "John\0",
+	    .lastname = "McCarthy\0",
+	    .age = 24
+	 };
+6.    get langth of array of struct
+       sizeof(ar) / sizeof(ar[0]);
+7.    debug c in docker (cmake ../ -DCMAKE_BUILD_TYPE=Debug)
+8.    how to know if a .so is build from debug for release ?
+        strings *.so | grep -i debug
+9.    convert relative path to absolute path in python
