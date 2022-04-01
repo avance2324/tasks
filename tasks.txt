@@ -127,3 +127,9 @@
        
 2.     summary of the week (20220220 - 20220226) .......()
 
+
+20220401
+
+run dpkg -l linux-* | grep ii
+lshw -C network
+
