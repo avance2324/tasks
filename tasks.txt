@@ -1,135 +1,23 @@
-20220221
-----------------------------------------------------------------
-1.     check my time off ...............................(done)
-         2.24 - 3.01 are approved
-2.     update status of ticket EMM-1078 ................(done)
-3.     update status of ticket MON-3560 ................(todo)
-4.     check out docker as Pavly mentioned .............()
-5.     study mon idl ...................................()
-        ref. ua 524
-6.     write my idl and test idl tools .................()
-        ref. ua 524
-7.     complete the summary of the week ................()
-8.     continue study bazel ............................()
-        focus on real bazel in mon
-9.     continue study of pybind ........................()
-        list how are the thing connected
-10.    planview ........................................(done)
-11.    montional daily
-        LCA 2020 SIL
-	join Motional beginning, for DevOps 30%
-        MON-3560, just get familiar with idl
-	  idl in general and idl rule of av-stack
-12.    MON-3408 ........................................()
-         1) first watch video BDT
-	 2) need to update the script in:
-	    https://gitlab.ci.motional.com/wuppertal/
-	     bidirectional-translator/-/tree/master/
-	     tools/generator
-	     
-	 3) contact Stefan for the desired format
-         watch the video for .............................()
-         https://drive.google.com/file/d/19s4cf5RnQ2FaMi4Leu22r28XGKWw1uY7/view
-12.    change the bidirectional-translator/tools/generator/
-        to gener
-
-
-20220222
-----------------------------------------------------------------
-1.     study the BDT ...................................()
-        - watch the video from Pavly ....(wip)
-	- run generator .................(done)
-2.     understand how does BDT generator work ..........()	
-        - how does cantools work
-3.     Aptiv Acadamy training ..........................(done)
-4.     clarify the requirement of ticket MON-3048 ......()
-5.     how to debug code in docker container ...........(done)
-       <- see vm :docker/011
-
-1.     line 40 - 42 no conversion
-2.     from line 43 - 61, convert to uint8
-3.     67 - 71 convert uint8
-4.     77 - 95 c 
-5.     101 - 105 u8
-6.     565 - 566, 568 - ?
-        569: timestamp
-	571: timestamp
-	570:
-	572 - 739 : boolean
-
-7.     745 - 748: uint16
-       753 - 754: boolean
-       
-
-20220223
-----------------------------------------------------------------
-1.     MON-3637 ........................................()
-        1) update idl generator
-2.     debug c++ in docker .............................(done)
-3.     debug bidirectional translator ..................(done)
-        with vscode
-	      1) do it in host
-	      2) update launch.json for python3 -m .
-	      3) example in 
-4.     debug python module with vscode .................(done)
-        ua 554
-
-
-20220224 - 20220301
-----------------------------------------------------------------
-1.     complete the idl task MON-3408 ..................()
-2.     get familiar with testbench .....................()
-3.     deep study bazel ................................()
-4.     deep study pybind ...............................()
-5.     study the structure of sys-mon ..................()
-6.     study c++ new features ..........................()
-        ua 220
-7.     study PyQt ......................................()
-        refer to bidirectional translator
-8.     study gen2-testbench ............................()
-9.     study bidirectonal translator ...................()
-10.    complete ticket for MON-3408.....................()
-        modify the BDT
-11.    how to debug c/c++ in pybind ....................(done)
-        ua 555
-
-
-20220224
-----------------------------------------------------------------
-1.     how to debug .so when run with ctype ............(done)
-2.     how to debug .so when run with pybind ...........(done)
-        ua 555
-3.     python snake_case_to_camel_case .................(done)
-          
-20220225
-----------------------------------------------------------------
-1.     autosar training ................................(done)
-2.     change BDT generator ............................()
-       2.1 in debug mode
-       2.2 
-3.     configure vscode code runner for python3 ........(done)
-4.     study argparse ..................................()
-          make it easy to use
-5.     how to use return of importlib.import_module() ..()    
-         it returns the module
-	 
-
-
-20220226
-----------------------------------------------------------------
-1.     target of the week  (20220220 - 20220226)........()
-	      1) study sphinx
-	      2) study pytest
-	      3) study flake
-        4) cpp stack <type> ...()
-        5) cpp std::pair ......()
-        6) study lark parser ..()
-       
-2.     summary of the week (20220220 - 20220226) .......()
-
 
 20220401
 
 run dpkg -l linux-* | grep ii
 lshw -C network
 
+20220331
+  1.   check master branch for all 2 
+       check develop branch for aur
+  2.   run example for periodic faster
+  3.   cpp study 
+        std::move()
+        std::make_unique()
+	std::map
+	for (a:b){}
+	std::nullopt
+        override ??
+        auto 
+	std::unique_ptr 
+	std::sort
+	using a = b ; .........(done)
+	   # type alias, like typedef ..
+	const reference ?
