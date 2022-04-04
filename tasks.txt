@@ -21,3 +21,13 @@ lshw -C network
 	using a = b ; .........(done)
 	   # type alias, like typedef ..
 	const reference ?
+20220404
+2.     what is faster generator doing ...................()
+3.     test the example with pybind .....................()
+         1) write pybind
+	 2) write bazel BUILD
+	 3) generate .so
+	 4) write test.py
+	 5) test read/write access
+4.     prepare the presentation for testbench ...........()
+5.     close 4061 ....................()
