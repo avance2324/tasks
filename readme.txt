@@ -96,4 +96,5 @@ summary of the week 20220305 - 20220312
 7.    debug c in docker (cmake ../ -DCMAKE_BUILD_TYPE=Debug)
 8.    how to know if a .so is build from debug for release ?
         strings *.so | grep -i debug
-9.    convert relative path to absolute path in python
+9.    convert relative path to absolute path in python 
+       using string "AbW5zrsYqlrEiPnDtFRlz9G57fpN0wS"
