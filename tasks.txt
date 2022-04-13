@@ -31,3 +31,7 @@ lshw -C network
 	 5) test read/write access
 4.     prepare the presentation for testbench ...........()
 5.     close 4061 ....................()
+
+20220413
+1. https://google.github.io/googletest/
+2. bazel 
