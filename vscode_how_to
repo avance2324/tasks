@@ -1,0 +1,115 @@
+    [quetion  ]  vscode questions
+                 1) Where is the vcs setting.json located?
+		    <= ~/.config/Code/User/
+		 2) what is setting.json?
+		 3) where is the settings for specific workspace?
+		     <workspace>/.vscode/settings.json ??
+                   		     
+    	      	 4) how to start vscode:
+		     % code .
+		 5) how to select python interpretor:
+                    5.1 click gear icon
+		    5.2 click Command Palette
+		    5.3 type Python:select interpretor
+		        select one interpretor
+		     	python3.7.6
+			It will list all available pythons
+			that are in the path
+	         6) why it show the extension marketplace is
+		    no available when click extension icon?
+		    <- start chome, then access this link
+		       marketplace.visualstudio.com/VSCode
+		 7) can I use vscode in both workstation?
+		    <- yes. If you want to access marketplace,
+		       access marketplace via webbrowser first
+                 8) where are the installed extensions stored ?
+		    <- in ~/.vscode/extensions/
+		 9) how to make auto indent in vscode
+		10) how to change name of workspace ?
+		    <- File -> save workspace as => give a name
+		11) how to add multiple project to workspace, say these
+	        12) how to create a good workspace to debug
+    		     shared lib -> see 152
+	        13) how to switch beween workspace folder?
+		      click the folder name in status bar:
+		       [test_shared_lib]
+		      now if you clikc build, it will test_shared_lib  
+		14) how to change font ?
+		15) how to make auto indent?
+		16) how to create docxy gen?
+		17) how to get dynamic syntax check ?
+		18) how to debug 
+		19) how to enlarge the font in vscode
+		    <= Ctrl + : larger
+		       Ctrl - : smaller
+		20) how to delete line?
+		     Ctrl + Shift + k
+		21) how to toggle between split and full window
+		    use Ctrl + Alt + LeftArrow/RightArrow
+		22) how to duplicate line
+		     Shift + Alt + UpArrow/DownArrow
+                23) how to format python code ?
+		      <- install autopep8
+		         right-click -> format doc
+                24) where does vscode generate the Makefile?
+		      <- by default it generate in folder
+		         build/, if build is not available
+	        25) how to expand and collapse the search result?
+		      Ctrl + Shift + F to search in files
+		      click icon Expand/Collapse All, in upper-right
+		      click X to remove the result from the list
+	        26) when debug S4D with vscode, how can I add variable to
+		     watch window
+		27) how to go to declaration/definition of function ?
+		28) how can vscode know which CMakeLists.txt to use?
+	        29) how to add variable to watch window?
+ 		     double click the variable (to select it) or with Ctrl+D
+		     right click -> Add to Watch
+		30) if the project build a .so can I run the program by
+		    click the > (launch the selected target)?
+		    <- no, see 174
+		31) how to create setting.json under workspace?
+		    <- see 175
+		32) folder/unfold one function
+		      Ctrl + Shift + [ <= fold
+		      Ctrl + Shift + ] <= unfold 
+		33) folder/unfold all functions
+		      Ctrl + k ... Ctrl + 0 <= folder all (zero)
+		      Ctrl + k ... Ctrl + j <= unfolder all
+		      Ctrl + k ... Ctrl + 2 <= folder upto level 2
+		34) how does vscode know which python file it
+		    should run?
+                35) how to comment/uncomment a line?
+		    Ctrl + /
+		36) Ctrl + Home => go to beginning of file
+		    Ctrl + End  => go to end of file
+                37) insert new line above: Ctrl + Shift + Enter
+		    insert new line below: Ctrl + Enter
+		38) delete word left:  Ctrl + Backspace
+		    delete work right: Ctrl + Del
+		39) how to know which function call current function?
+		     check in CALLSTACK
+		40) how to create a separator in WATCH window?
+		    add "===================== <Name> =================="
+		41) Alt + K : toggle bookmark
+		42) Alt + J : previous bookmark
+		43) Alt + L : next bookmark
+		44) Ctrl + Shift + o: show method list
+		45) use Exploer/ Outline to show list of methods
+                46) F4/shift+F4: next/previous search result, still focus on code editor 
+		47) column selection mode: once you select, you will see
+		    it on status bar as well
+    48) how to debug code in docker container with vscode 
+		   48.1) start docker container
+		   48.2) start vscode in host
+		   48.3) in vscode click docker extension
+		   48.4) in left window under DOCKER/CONTAINERS, right click the run container
+		          -> Attach Visual Studio Code
+		          <- it will open a vscode window with title:
+		             ...[Container ....4.2.11-opengl ...]
+	     48.5) open file and set breakpoint (main.py)
+		   48.6) press F5
+
+          
+  
+		    
